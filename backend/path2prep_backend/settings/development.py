@@ -8,12 +8,21 @@ DEBUG = True
 # Allow all origins in development
 CORS_ALLOW_ALL_ORIGINS = True
 
-# Database - can use SQLite for development
+# Database - use SQLite for development (override base settings)
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
+}
+
+# Override MongoDB settings for development (optional)
+MONGODB_SETTINGS = {
+    'host': 'localhost',
+    'port': 27017,
+    'db': 'path2prep_raw',
+    'username': '',
+    'password': '',
 }
 
 # Disable SSL for local development

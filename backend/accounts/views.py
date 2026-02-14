@@ -5,8 +5,17 @@ from rest_framework_simplejwt.views import TokenObtainPairView
 from rest_framework_simplejwt.tokens import RefreshToken
 from django.contrib.auth import get_user_model
 from django.utils import timezone
-from django_ratelimit.decorators import ratelimit
-from django.utils.decorators import method_decorator
+try:
+    from django_ratelimit.decorators import ratelimit
+    from django.utils.decorators import method_decorator
+    RATELIMIT_AVAILABLE = True
+except ImportError:
+    RATELIMIT_AVAILABLE = False
+    def ratelimit(*args, **kwargs):
+        def decorator(func):
+            return func
+        return decorator
+    method_decorator = lambda x: lambda y: y
 from .models import User
 from .serializers import UserSerializer, UserRegistrationSerializer
 from .permissions import IsAdmin, IsStudentOrAdmin

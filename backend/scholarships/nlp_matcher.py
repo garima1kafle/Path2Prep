@@ -3,15 +3,34 @@ NLP-based Scholarship Matching Engine
 Implements TF-IDF + Cosine Similarity and BERT embeddings
 """
 import os
-import numpy as np
 from pathlib import Path
 from django.conf import settings
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics.pairwise import cosine_similarity
-from sentence_transformers import SentenceTransformer
-import spacy
 from .models import Scholarship
 from profiles.models import Profile
+
+# Optional ML/NLP imports
+try:
+    import numpy as np
+    from sklearn.feature_extraction.text import TfidfVectorizer
+    from sklearn.metrics.pairwise import cosine_similarity
+    ML_AVAILABLE = True
+except ImportError:
+    ML_AVAILABLE = False
+    np = None
+
+try:
+    from sentence_transformers import SentenceTransformer
+    BERT_AVAILABLE = True
+except ImportError:
+    BERT_AVAILABLE = False
+    SentenceTransformer = None
+
+try:
+    import spacy
+    SPACY_AVAILABLE = True
+except ImportError:
+    SPACY_AVAILABLE = False
+    spacy = None
 
 
 class ScholarshipMatcher:
@@ -26,29 +45,41 @@ class ScholarshipMatcher:
     
     def _load_models(self):
         """Load NLP models"""
+        if not ML_AVAILABLE:
+            print("ML libraries not available. Using basic matching.")
+            return
+        
         try:
             # Load spaCy model
-            try:
-                self.nlp = spacy.load("en_core_web_sm")
-            except OSError:
-                print("spaCy model not found. Install with: python -m spacy download en_core_web_sm")
+            if SPACY_AVAILABLE:
+                try:
+                    self.nlp = spacy.load("en_core_web_sm")
+                except OSError:
+                    print("spaCy model not found. Install with: python -m spacy download en_core_web_sm")
+                    self.nlp = None
+            else:
                 self.nlp = None
             
             # Load BERT model
-            try:
-                self.bert_model = SentenceTransformer('all-MiniLM-L6-v2')
-                print("BERT model loaded successfully")
-            except Exception as e:
-                print(f"Error loading BERT model: {e}. Using TF-IDF only.")
+            if BERT_AVAILABLE:
+                try:
+                    self.bert_model = SentenceTransformer('all-MiniLM-L6-v2')
+                    print("BERT model loaded successfully")
+                except Exception as e:
+                    print(f"Error loading BERT model: {e}. Using TF-IDF only.")
+                    self.use_bert = False
+                    self.bert_model = None
+            else:
                 self.use_bert = False
                 self.bert_model = None
             
             # Initialize TF-IDF vectorizer
-            self.tfidf_vectorizer = TfidfVectorizer(
-                max_features=5000,
-                stop_words='english',
-                ngram_range=(1, 2)
-            )
+            if ML_AVAILABLE:
+                self.tfidf_vectorizer = TfidfVectorizer(
+                    max_features=5000,
+                    stop_words='english',
+                    ngram_range=(1, 2)
+                )
         except Exception as e:
             print(f"Error initializing NLP models: {e}")
     
@@ -112,7 +143,7 @@ class ScholarshipMatcher:
     
     def _match_with_tfidf(self, profile_text, scholarship_texts):
         """Level 1: TF-IDF + Cosine Similarity matching"""
-        if not self.tfidf_vectorizer:
+        if not ML_AVAILABLE or not self.tfidf_vectorizer:
             return None
         
         # Fit and transform
@@ -128,7 +159,7 @@ class ScholarshipMatcher:
     
     def _match_with_bert(self, profile_text, scholarship_texts):
         """Level 2: BERT embeddings matching"""
-        if not self.bert_model:
+        if not BERT_AVAILABLE or not self.bert_model:
             return None
         
         # Generate embeddings
@@ -178,22 +209,33 @@ class ScholarshipMatcher:
         tfidf_scores = self._match_with_tfidf(profile_text_processed, scholarship_texts)
         
         # Level 2: BERT matching (if available)
-        if self.use_bert and self.bert_model:
+        if self.use_bert and self.bert_model and BERT_AVAILABLE:
             bert_scores = self._match_with_bert(profile_text, [f"{s.title} {s.description} {s.eligibility}" for s in scholarships])
             
             # Combine scores (weighted average)
-            if tfidf_scores is not None:
+            if tfidf_scores is not None and ML_AVAILABLE:
                 final_scores = 0.3 * tfidf_scores + 0.7 * bert_scores
                 method = 'bert_tfidf_ensemble'
             else:
                 final_scores = bert_scores
                 method = 'bert'
         else:
-            final_scores = tfidf_scores if tfidf_scores is not None else np.ones(len(scholarships)) * 0.5
-            method = 'tfidf'
+            if ML_AVAILABLE and tfidf_scores is not None:
+                final_scores = tfidf_scores
+                method = 'tfidf'
+            else:
+                # Fallback: return all scholarships with equal scores
+                final_scores = [0.5] * len(scholarships)
+                method = 'default'
         
         # Get top K scholarships
-        top_indices = np.argsort(final_scores)[-top_k:][::-1]
+        if ML_AVAILABLE:
+            top_indices = np.argsort(final_scores)[-top_k:][::-1]
+        else:
+            # Simple fallback sorting
+            indexed_scores = list(enumerate(final_scores))
+            indexed_scores.sort(key=lambda x: x[1], reverse=True)
+            top_indices = [idx for idx, _ in indexed_scores[:top_k]]
         
         results = []
         for idx in top_indices:

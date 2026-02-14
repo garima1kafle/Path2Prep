@@ -3,15 +3,26 @@ ML Engine for Career Recommendations
 Implements Random Forest, KNN, and Neural Network models with ensemble voting
 """
 import os
-import joblib
-import numpy as np
-import pandas as pd
 from pathlib import Path
 from django.conf import settings
 from careers.models import Career
 from profiles.models import Profile
-from sklearn.preprocessing import StandardScaler
-import tensorflow as tf
+
+# Optional ML imports
+try:
+    import joblib
+    import numpy as np
+    import pandas as pd
+    from sklearn.preprocessing import StandardScaler
+    import tensorflow as tf
+    ML_AVAILABLE = True
+except ImportError:
+    ML_AVAILABLE = False
+    joblib = None
+    np = None
+    pd = None
+    StandardScaler = None
+    tf = None
 
 
 class CareerRecommendationEngine:
@@ -30,6 +41,11 @@ class CareerRecommendationEngine:
     
     def _load_models(self):
         """Load trained ML models"""
+        if not ML_AVAILABLE:
+            print("ML libraries not available. Using default recommendations.")
+            self.models_loaded = False
+            return
+        
         try:
             # Load models
             rf_path = self.models_dir / 'random_forest_model.pkl'
@@ -93,6 +109,9 @@ class CareerRecommendationEngine:
     
     def _create_feature_vector(self, features):
         """Create feature vector matching training data format"""
+        if not ML_AVAILABLE or not self.feature_cols:
+            return None
+        
         # Create DataFrame with all feature columns
         feature_dict = {col: 0 for col in self.feature_cols}
         

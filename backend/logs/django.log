@@ -1,0 +1,63 @@
+INFO 2026-02-14 22:42:41,318 autoreload Watching for file changes with StatReloader
+INFO 2026-02-14 22:42:53,886 autoreload D:\FYP\Path2Prep\backend\accounts\models.py changed, reloading.
+INFO 2026-02-14 22:42:59,655 autoreload Watching for file changes with StatReloader
+INFO 2026-02-14 22:44:45,237 autoreload Watching for file changes with StatReloader
+INFO 2026-02-14 23:07:38,037 autoreload D:\FYP\Path2Prep\backend\recommendations\ml_engine.py changed, reloading.
+INFO 2026-02-14 23:07:38,266 autoreload D:\FYP\Path2Prep\backend\accounts\models.py changed, reloading.
+INFO 2026-02-14 23:08:08,241 autoreload Watching for file changes with StatReloader
+INFO 2026-02-15 00:01:00,844 autoreload Watching for file changes with StatReloader
+WARNING 2026-02-15 00:02:45,292 log Not Found: /
+WARNING 2026-02-15 00:02:45,296 log "GET / HTTP/1.1" 404 3393
+WARNING 2026-02-15 00:02:45,320 log Not Found: /
+WARNING 2026-02-15 00:02:45,321 log "GET / HTTP/1.1" 404 3393
+WARNING 2026-02-15 00:02:46,188 log Not Found: /favicon.ico
+WARNING 2026-02-15 00:02:46,190 log "GET /favicon.ico HTTP/1.1" 404 3444
+INFO 2026-02-15 00:02:53,904 log "GET /admin HTTP/1.1" 301 0
+INFO 2026-02-15 00:02:54,025 log "GET /admin/ HTTP/1.1" 302 0
+INFO 2026-02-15 00:02:54,402 log "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4080
+INFO 2026-02-15 00:02:54,676 log "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 3538
+INFO 2026-02-15 00:02:54,685 log "GET /static/admin/css/base.css HTTP/1.1" 200 23100
+INFO 2026-02-15 00:02:54,710 log "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2026-02-15 00:02:54,714 log "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2026-02-15 00:02:54,716 log "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2026-02-15 00:02:54,746 log "GET /static/admin/css/responsive.css HTTP/1.1" 200 16273
+INFO 2026-02-15 00:02:54,782 log "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2026-02-15 00:03:05,724 log "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2026-02-15 00:03:05,858 log "GET /admin/ HTTP/1.1" 200 19224
+INFO 2026-02-15 00:03:05,946 log "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2026-02-15 00:03:05,999 log "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 593
+INFO 2026-02-15 00:03:05,999 log "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 978
+INFO 2026-02-15 00:03:17,201 log "GET /admin/accounts/academicinfo/ HTTP/1.1" 200 20302
+INFO 2026-02-15 00:03:17,298 log "GET /static/admin/css/changelists.css HTTP/1.1" 200 7498
+INFO 2026-02-15 00:03:17,321 log "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2026-02-15 00:03:17,353 log "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2026-02-15 00:03:17,364 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-15 00:03:17,369 log "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2026-02-15 00:03:17,382 log "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2026-02-15 00:03:17,399 log "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2026-02-15 00:03:17,411 log "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2026-02-15 00:03:17,474 log "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2026-02-15 00:03:17,527 log "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2026-02-15 00:03:17,668 log "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2026-02-15 00:03:17,753 log "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 593
+INFO 2026-02-15 00:03:20,642 log "GET /admin/accounts/academicinfo/4/change/ HTTP/1.1" 200 23443
+INFO 2026-02-15 00:03:20,689 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-15 00:03:20,708 log "GET /static/admin/css/forms.css HTTP/1.1" 200 8817
+INFO 2026-02-15 00:03:20,718 log "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2026-02-15 00:03:20,734 log "GET /static/admin/css/widgets.css HTTP/1.1" 200 11811
+INFO 2026-02-15 00:03:20,740 log "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 928
+INFO 2026-02-15 00:03:20,779 log "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2026-02-15 00:03:24,564 log "GET /admin/accounts/academicinfo/ HTTP/1.1" 200 20302
+INFO 2026-02-15 00:03:25,872 log "GET /admin/ HTTP/1.1" 200 19224
+WARNING 2026-02-15 00:07:27,908 log Not Found: /
+WARNING 2026-02-15 00:07:27,909 log "GET / HTTP/1.1" 404 3393
+WARNING 2026-02-15 00:07:29,240 log Not Found: /
+WARNING 2026-02-15 00:07:29,241 log "GET / HTTP/1.1" 404 3393
+WARNING 2026-02-15 00:07:29,710 log Not Found: /
+WARNING 2026-02-15 00:07:29,711 log "GET / HTTP/1.1" 404 3393
+WARNING 2026-02-15 00:07:30,225 log Not Found: /
+WARNING 2026-02-15 00:07:30,227 log "GET / HTTP/1.1" 404 3393
+INFO 2026-02-15 00:09:11,732 autoreload D:\FYP\Path2Prep\backend\path2prep_backend\urls.py changed, reloading.
+INFO 2026-02-15 00:09:12,227 autoreload D:\FYP\Path2Prep\backend\path2prep_backend\urls.py changed, reloading.
+INFO 2026-02-15 00:09:12,327 autoreload D:\FYP\Path2Prep\backend\path2prep_backend\urls.py changed, reloading.
+INFO 2026-02-15 00:09:19,918 autoreload Watching for file changes with StatReloader
