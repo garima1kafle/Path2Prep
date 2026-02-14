@@ -1,11 +1,13 @@
-from rest_framework import routers
-from .views import UserViewSet, AcademicViewSet, CareerPrefsViewSet, ProfileCompletionViewSet
-
-router = routers.DefaultRouter()
-router.register(r'users', UserViewSet, basename='user')
-router.register(r'academic', AcademicViewSet, basename='academic')
-router.register(r'career-prefs', CareerPrefsViewSet, basename='careerprefs')
-router.register(r'profile-completion', ProfileCompletionViewSet, basename='profilecompletion')
-
-urlpatterns = router.urls
 from django.urls import path, include
+from rest_framework.routers import DefaultRouter
+from rest_framework_simplejwt.views import TokenRefreshView
+from .views import UserViewSet, login
+
+router = DefaultRouter()
+router.register(r'users', UserViewSet, basename='user')
+
+urlpatterns = [
+    path('login/', login, name='login'),
+    path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
+    path('', include(router.urls)),
+]
