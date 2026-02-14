@@ -61,3 +61,8 @@ INFO 2026-02-15 00:09:11,732 autoreload D:\FYP\Path2Prep\backend\path2prep_backe
 INFO 2026-02-15 00:09:12,227 autoreload D:\FYP\Path2Prep\backend\path2prep_backend\urls.py changed, reloading.
 INFO 2026-02-15 00:09:12,327 autoreload D:\FYP\Path2Prep\backend\path2prep_backend\urls.py changed, reloading.
 INFO 2026-02-15 00:09:19,918 autoreload Watching for file changes with StatReloader
+INFO 2026-02-15 00:11:58,125 basehttp "GET / HTTP/1.1" 200 67
+INFO 2026-02-15 00:11:58,725 basehttp "GET / HTTP/1.1" 200 67
+INFO 2026-02-15 00:12:01,415 basehttp "GET / HTTP/1.1" 200 67
+INFO 2026-02-15 00:12:10,147 basehttp "GET /admin/ HTTP/1.1" 200 19300
+INFO 2026-02-15 00:16:18,094 basehttp "GET / HTTP/1.1" 200 67
