@@ -15,9 +15,14 @@ class ProfileViewSet(viewsets.ModelViewSet):
     def perform_create(self, serializer):
         serializer.save(user=self.request.user)
     
-    @action(detail=False, methods=['get'])
+    @action(detail=False, methods=['get', 'patch', 'put'])
     def me(self, request):
         profile, created = Profile.objects.get_or_create(user=request.user)
+        if request.method in ['PATCH', 'PUT']:
+            serializer = self.get_serializer(profile, data=request.data, partial=(request.method == 'PATCH'))
+            serializer.is_valid(raise_exception=True)
+            serializer.save()
+            return Response(serializer.data)
         serializer = self.get_serializer(profile)
         return Response(serializer.data)
 

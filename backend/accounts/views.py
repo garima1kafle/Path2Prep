@@ -1,5 +1,5 @@
 from rest_framework import viewsets, permissions, status
-from rest_framework.decorators import action, api_view, permission_classes
+from rest_framework.decorators import action, api_view, permission_classes, authentication_classes
 from rest_framework.response import Response
 from rest_framework_simplejwt.views import TokenObtainPairView
 from rest_framework_simplejwt.tokens import RefreshToken
@@ -33,7 +33,7 @@ class UserViewSet(viewsets.ModelViewSet):
         return User.objects.filter(id=self.request.user.id)
     
     def get_permissions(self):
-        if self.action == 'create':
+        if self.action in ['create', 'register']:
             return [permissions.AllowAny()]
         elif self.action in ['destroy', 'update', 'partial_update']:
             return [IsAdmin()]
@@ -44,7 +44,8 @@ class UserViewSet(viewsets.ModelViewSet):
         serializer = self.get_serializer(request.user)
         return Response(serializer.data)
     
-    @action(detail=False, methods=['post'], permission_classes=[permissions.AllowAny])
+    @action(detail=False, methods=['post'], permission_classes=[permissions.AllowAny],
+           authentication_classes=[])
     @method_decorator(ratelimit(key='ip', rate='5/m', method='POST'))
     def register(self, request):
         """User registration endpoint"""
@@ -90,12 +91,26 @@ class UserViewSet(viewsets.ModelViewSet):
 @api_view(['POST'])
 @permission_classes([permissions.AllowAny])
 @ratelimit(key='ip', rate='5/m', method='POST')
+@authentication_classes([])
 def login(request):
-    """JWT Login endpoint"""
-    from rest_framework_simplejwt.views import TokenObtainPairView
+    """JWT Login endpoint - accepts email or username"""
     from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
     
-    serializer = TokenObtainPairSerializer(data=request.data)
+    data = request.data.copy()
+    
+    # If email is provided instead of username, look up the username
+    email = data.get('email')
+    if email and not data.get('username'):
+        try:
+            user = User.objects.get(email=email)
+            data['username'] = user.username
+        except User.DoesNotExist:
+            return Response(
+                {'detail': 'No account found with this email.'},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+    
+    serializer = TokenObtainPairSerializer(data=data)
     if serializer.is_valid():
         user = serializer.user
         return Response({

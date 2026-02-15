@@ -117,7 +117,7 @@ class ApiService {
   }
 
   async updateProfile(profileData: Partial<Profile>): Promise<Profile> {
-    const response = await this.api.patch('/profiles/profiles/', profileData);
+    const response = await this.api.patch('/profiles/me/', profileData);
     return response.data;
   }
 

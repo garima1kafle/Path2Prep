@@ -66,3 +66,862 @@ INFO 2026-02-15 00:11:58,725 basehttp "GET / HTTP/1.1" 200 67
 INFO 2026-02-15 00:12:01,415 basehttp "GET / HTTP/1.1" 200 67
 INFO 2026-02-15 00:12:10,147 basehttp "GET /admin/ HTTP/1.1" 200 19300
 INFO 2026-02-15 00:16:18,094 basehttp "GET / HTTP/1.1" 200 67
+INFO 2026-02-15 00:21:02,672 basehttp "GET / HTTP/1.1" 200 67
+INFO 2026-02-15 00:21:07,539 basehttp "GET /admin/careers/career/ HTTP/1.1" 200 18926
+INFO 2026-02-15 00:21:07,883 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2808
+INFO 2026-02-15 00:21:07,887 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 22120
+INFO 2026-02-15 00:21:07,902 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2026-02-15 00:21:07,933 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+INFO 2026-02-15 00:21:07,943 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2026-02-15 00:21:07,983 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 16565
+INFO 2026-02-15 00:21:07,985 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2026-02-15 00:21:07,989 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2026-02-15 00:21:08,009 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2026-02-15 00:21:08,033 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2026-02-15 00:21:08,034 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2026-02-15 00:21:08,069 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-15 00:21:08,073 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2026-02-15 00:21:08,090 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2026-02-15 00:21:08,260 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2026-02-15 00:21:08,355 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2026-02-15 00:21:08,377 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2026-02-15 00:21:08,417 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2026-02-15 00:21:08,506 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2026-02-15 00:21:08,513 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2026-02-15 00:21:08,528 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2026-02-15 00:21:11,912 basehttp "GET /admin/ HTTP/1.1" 200 19300
+INFO 2026-02-15 00:21:13,716 basehttp "GET /admin/accounts/academicinfo/ HTTP/1.1" 200 20148
+INFO 2026-02-15 00:21:13,842 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-15 00:21:15,927 basehttp "GET /admin/accounts/academicinfo/4/change/ HTTP/1.1" 200 23295
+INFO 2026-02-15 00:21:16,000 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2026-02-15 00:21:16,008 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-15 00:21:16,032 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 200 8525
+INFO 2026-02-15 00:21:16,053 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2026-02-15 00:21:16,074 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2026-02-15 00:21:16,083 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 200 11973
+INFO 2026-02-15 00:21:18,210 basehttp "GET /admin/accounts/academicinfo/ HTTP/1.1" 200 20148
+INFO 2026-02-15 00:21:19,406 basehttp "GET /admin/accounts/academicinfo/3/change/ HTTP/1.1" 200 23295
+INFO 2026-02-15 00:21:19,499 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-15 00:21:21,111 basehttp "GET /admin/accounts/academicinfo/ HTTP/1.1" 200 20148
+INFO 2026-02-15 00:21:22,562 basehttp "GET /admin/accounts/academicinfo/2/change/ HTTP/1.1" 200 23295
+INFO 2026-02-15 00:21:22,639 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-15 00:21:24,288 basehttp "GET /admin/accounts/academicinfo/ HTTP/1.1" 200 20148
+INFO 2026-02-15 00:21:25,554 basehttp "GET /admin/accounts/careerpreferences/ HTTP/1.1" 200 20253
+INFO 2026-02-15 00:21:25,636 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-15 00:21:27,132 basehttp "GET /admin/accounts/careerpreferences/4/change/ HTTP/1.1" 200 21733
+INFO 2026-02-15 00:21:27,197 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-15 00:21:32,880 basehttp "GET /admin/accounts/careerpreferences/ HTTP/1.1" 200 20253
+INFO 2026-02-15 00:21:36,705 basehttp "GET /admin/accounts/academicinfo/ HTTP/1.1" 200 20148
+INFO 2026-02-15 00:21:39,051 basehttp "GET /admin/ HTTP/1.1" 200 19300
+INFO 2026-02-15 00:23:42,857 basehttp "GET / HTTP/1.1" 200 67
+INFO 2026-02-15 00:23:52,643 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 23237
+INFO 2026-02-15 00:23:52,745 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2026-02-15 00:23:52,757 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2026-02-15 00:23:52,764 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2026-02-15 00:23:52,767 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2026-02-15 00:23:52,768 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2026-02-15 00:23:52,778 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2026-02-15 00:23:52,779 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2026-02-15 00:23:52,796 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2026-02-15 00:23:52,801 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2026-02-15 00:23:52,802 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2026-02-15 00:23:52,821 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-15 00:23:52,824 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2026-02-15 00:23:52,835 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2026-02-15 00:23:52,835 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2026-02-15 00:23:52,837 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2026-02-15 00:23:52,840 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2026-02-15 00:23:52,899 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2026-02-15 00:23:52,914 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2026-02-15 00:23:52,915 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2026-02-15 00:23:52,923 basehttp "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+INFO 2026-02-15 00:23:52,937 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2026-02-15 00:23:52,938 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2026-02-15 00:23:52,974 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2026-02-15 00:23:53,008 basehttp "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO 2026-02-15 00:24:07,558 basehttp "GET /admin/careers/career/ HTTP/1.1" 200 18926
+INFO 2026-02-15 00:24:07,629 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-15 00:24:10,500 basehttp "GET /admin/careers/career/add/ HTTP/1.1" 200 21853
+INFO 2026-02-15 00:24:10,580 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2026-02-15 00:24:10,581 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2026-02-15 00:24:10,611 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2026-02-15 00:24:10,613 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2026-02-15 00:24:10,622 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-15 00:24:16,958 basehttp "GET /admin/scholarships/scholarship/ HTTP/1.1" 200 20103
+INFO 2026-02-15 00:24:17,096 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-15 00:44:11,457 basehttp "GET / HTTP/1.1" 200 67
+INFO 2026-02-15 00:47:53,132 basehttp "GET / HTTP/1.1" 200 67
+INFO 2026-02-15 00:54:59,929 basehttp "GET /admin/scholarships/scholarship/ HTTP/1.1" 200 20103
+INFO 2026-02-15 00:54:59,972 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2026-02-15 00:54:59,974 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2026-02-15 00:54:59,979 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2026-02-15 00:54:59,979 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2026-02-15 00:54:59,984 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2026-02-15 00:54:59,988 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2026-02-15 00:54:59,996 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2026-02-15 00:55:00,004 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2026-02-15 00:55:00,010 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-15 00:55:00,012 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2026-02-15 00:55:00,020 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2026-02-15 00:55:00,028 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2026-02-15 00:55:00,032 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2026-02-15 00:55:00,038 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2026-02-15 00:55:00,043 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2026-02-15 00:55:00,045 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2026-02-15 00:55:00,087 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2026-02-15 00:55:00,088 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2026-02-15 00:55:00,130 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2026-02-15 00:55:00,134 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2026-02-15 00:55:00,134 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2026-02-15 00:55:03,125 basehttp "GET / HTTP/1.1" 200 67
+INFO 2026-02-15 00:55:04,382 basehttp "GET / HTTP/1.1" 200 67
+INFO 2026-02-15 01:04:35,927 autoreload Watching for file changes with StatReloader
+INFO 2026-02-15 01:04:44,415 log "GET / HTTP/1.1" 200 67
+WARNING 2026-02-15 01:04:45,100 log Not Found: /favicon.ico
+WARNING 2026-02-15 01:04:45,130 log "GET /favicon.ico HTTP/1.1" 404 3587
+INFO 2026-02-15 01:05:24,577 log "GET / HTTP/1.1" 200 67
+INFO 2026-02-15 01:05:25,534 log "GET / HTTP/1.1" 200 67
+INFO 2026-02-15 01:05:25,734 log "GET / HTTP/1.1" 200 67
+INFO 2026-02-15 01:05:26,090 log "GET / HTTP/1.1" 200 67
+INFO 2026-02-15 01:08:43,544 log "GET / HTTP/1.1" 200 67
+INFO 2026-02-15 01:08:46,782 log "GET / HTTP/1.1" 200 67
+WARNING 2026-02-15 01:08:47,125 log Not Found: /favicon.ico
+WARNING 2026-02-15 01:08:47,126 log "GET /favicon.ico HTTP/1.1" 404 3587
+INFO 2026-02-15 01:17:31,060 log "GET / HTTP/1.1" 200 67
+INFO 2026-02-15 01:27:09,680 autoreload Watching for file changes with StatReloader
+INFO 2026-02-15 01:27:45,028 autoreload Watching for file changes with StatReloader
+INFO 2026-02-15 01:31:04,348 autoreload D:\FYP\Path2Prep\backend\scholarships\nlp_matcher.py changed, reloading.
+INFO 2026-02-15 01:31:04,421 autoreload D:\FYP\Path2Prep\backend\scholarships\nlp_matcher.py changed, reloading.
+INFO 2026-02-15 01:31:25,272 autoreload Watching for file changes with StatReloader
+INFO 2026-02-15 01:31:33,859 autoreload Watching for file changes with StatReloader
+INFO 2026-02-15 01:32:36,498 autoreload D:\FYP\Path2Prep\backend\scholarships\nlp_matcher.py changed, reloading.
+INFO 2026-02-15 01:32:41,905 autoreload Watching for file changes with StatReloader
+INFO 2026-02-15 09:54:26,861 autoreload Watching for file changes with StatReloader
+INFO 2026-02-15 10:06:32,420 log "OPTIONS /api/auth/users/register/ HTTP/1.1" 200 0
+INFO 2026-02-15 10:06:36,154 log "OPTIONS /api/auth/users/register/ HTTP/1.1" 200 0
+INFO 2026-02-15 10:07:00,218 log "OPTIONS /api/auth/users/register/ HTTP/1.1" 200 0
+INFO 2026-02-15 10:07:40,333 log "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+INFO 2026-02-15 10:11:20,212 log "OPTIONS /api/auth/users/register/ HTTP/1.1" 200 0
+WARNING 2026-02-15 10:11:20,230 log Unauthorized: /api/auth/users/register/
+WARNING 2026-02-15 10:11:20,232 log "POST /api/auth/users/register/ HTTP/1.1" 401 58
+WARNING 2026-02-15 10:13:23,155 log Unauthorized: /api/auth/users/register/
+WARNING 2026-02-15 10:13:23,162 log "POST /api/auth/users/register/ HTTP/1.1" 401 58
+INFO 2026-02-15 10:14:47,124 autoreload D:\FYP\Path2Prep\backend\accounts\views.py changed, reloading.
+INFO 2026-02-15 10:14:48,039 autoreload D:\FYP\Path2Prep\backend\accounts\views.py changed, reloading.
+INFO 2026-02-15 10:14:52,361 autoreload Watching for file changes with StatReloader
+INFO 2026-02-15 10:14:57,381 autoreload Watching for file changes with StatReloader
+INFO 2026-02-15 10:15:02,487 autoreload D:\FYP\Path2Prep\backend\accounts\views.py changed, reloading.
+INFO 2026-02-15 10:15:02,983 autoreload D:\FYP\Path2Prep\backend\accounts\views.py changed, reloading.
+INFO 2026-02-15 10:15:07,387 autoreload Watching for file changes with StatReloader
+INFO 2026-02-15 10:15:07,564 autoreload Watching for file changes with StatReloader
+INFO 2026-02-15 10:16:06,176 autoreload Watching for file changes with StatReloader
+WARNING 2026-02-15 10:16:35,516 log Forbidden: /api/auth/users/register/
+WARNING 2026-02-15 10:16:35,517 log "POST /api/auth/users/register/ HTTP/1.1" 403 63
+INFO 2026-02-15 10:17:13,612 log "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+WARNING 2026-02-15 10:17:13,621 log Bad Request: /api/auth/login/
+WARNING 2026-02-15 10:17:13,622 log "POST /api/auth/login/ HTTP/1.1" 400 40
+INFO 2026-02-15 10:17:20,657 log "GET / HTTP/1.1" 200 67
+INFO 2026-02-15 10:17:25,127 log "GET /admin/ HTTP/1.1" 200 19224
+INFO 2026-02-15 10:17:25,186 log "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2026-02-15 10:17:25,194 log "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2026-02-15 10:17:25,198 log "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2026-02-15 10:17:25,198 log "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2026-02-15 10:17:25,204 log "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2026-02-15 10:17:25,206 log "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2026-02-15 10:17:25,213 log "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2026-02-15 10:17:25,226 log "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2026-02-15 10:17:25,226 log "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2026-02-15 10:17:29,114 log "GET /admin/accounts/user/ HTTP/1.1" 200 23562
+INFO 2026-02-15 10:17:29,185 log "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2026-02-15 10:17:29,189 log "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2026-02-15 10:17:29,190 log "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2026-02-15 10:17:29,193 log "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2026-02-15 10:17:29,195 log "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2026-02-15 10:17:29,205 log "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2026-02-15 10:17:29,205 log "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2026-02-15 10:17:29,210 log "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2026-02-15 10:17:29,210 log "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2026-02-15 10:17:29,224 log "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2026-02-15 10:17:29,225 log "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2026-02-15 10:17:29,235 log "GET /static/admin/img/icon-no.svg HTTP/1.1" 304 0
+INFO 2026-02-15 10:17:29,245 log "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2026-02-15 10:17:29,283 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-15 10:17:29,358 log "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2026-02-15 10:17:29,359 log "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2026-02-15 10:17:29,364 log "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0
+INFO 2026-02-15 10:17:41,701 log "GET /admin/accounts/user/1/change/ HTTP/1.1" 200 37502
+INFO 2026-02-15 10:17:41,757 log "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2026-02-15 10:17:41,769 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-15 10:17:41,771 log "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2026-02-15 10:17:42,051 log "GET /static/admin/js/calendar.js HTTP/1.1" 200 9159
+INFO 2026-02-15 10:17:42,068 log "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 16428
+INFO 2026-02-15 10:17:42,075 log "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2026-02-15 10:17:42,086 log "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4530
+INFO 2026-02-15 10:17:42,087 log "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19698
+INFO 2026-02-15 10:17:42,096 log "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2026-02-15 10:17:42,379 log "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1112
+INFO 2026-02-15 10:17:42,383 log "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 2387
+INFO 2026-02-15 10:17:42,383 log "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 805
+INFO 2026-02-15 10:17:50,100 log "GET /admin/accounts/user/1/password/ HTTP/1.1" 200 19218
+INFO 2026-02-15 10:17:50,165 log "GET /static/admin/css/unusable_password_field.css HTTP/1.1" 200 663
+INFO 2026-02-15 10:17:58,459 log "POST /admin/accounts/user/1/password/ HTTP/1.1" 200 19462
+INFO 2026-02-15 10:18:12,066 log "POST /admin/accounts/user/1/password/ HTTP/1.1" 302 0
+INFO 2026-02-15 10:18:12,143 log "GET /admin/accounts/user/1/change/ HTTP/1.1" 200 37638
+INFO 2026-02-15 10:18:12,211 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2026-02-15 10:18:21,192 log Bad Request: /api/auth/login/
+WARNING 2026-02-15 10:18:21,193 log "POST /api/auth/login/ HTTP/1.1" 400 40
+WARNING 2026-02-15 10:19:16,535 log Forbidden: /api/auth/users/register/
+WARNING 2026-02-15 10:19:16,536 log "POST /api/auth/users/register/ HTTP/1.1" 403 63
+INFO 2026-02-15 10:20:34,045 autoreload D:\FYP\Path2Prep\backend\accounts\views.py changed, reloading.
+INFO 2026-02-15 10:20:34,142 autoreload D:\FYP\Path2Prep\backend\accounts\views.py changed, reloading.
+INFO 2026-02-15 10:20:37,580 autoreload Watching for file changes with StatReloader
+INFO 2026-02-15 10:20:39,241 autoreload Watching for file changes with StatReloader
+INFO 2026-02-15 10:21:59,910 autoreload Watching for file changes with StatReloader
+WARNING 2026-02-15 10:22:53,630 log Bad Request: /api/auth/login/
+WARNING 2026-02-15 10:22:53,631 log "POST /api/auth/login/ HTTP/1.1" 400 40
+INFO 2026-02-15 10:23:11,869 log "GET / HTTP/1.1" 200 67
+INFO 2026-02-15 10:23:15,263 log "GET /admin/ HTTP/1.1" 200 19623
+INFO 2026-02-15 10:23:19,263 log "GET /admin/accounts/user/ HTTP/1.1" 200 23562
+INFO 2026-02-15 10:23:19,340 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2026-02-15 10:23:43,116 log Bad Request: /api/auth/users/register/
+WARNING 2026-02-15 10:23:43,117 log "POST /api/auth/users/register/ HTTP/1.1" 400 58
+INFO 2026-02-15 10:25:24,504 log "POST /api/auth/users/register/ HTTP/1.1" 201 733
+INFO 2026-02-15 10:25:24,600 basehttp - Broken pipe from ('127.0.0.1', 52920)
+WARNING 2026-02-15 10:25:52,204 log Bad Request: /api/auth/users/register/
+WARNING 2026-02-15 10:25:52,205 log "POST /api/auth/users/register/ HTTP/1.1" 400 58
+INFO 2026-02-15 10:39:51,214 log "POST /api/auth/users/register/ HTTP/1.1" 201 746
+INFO 2026-02-15 10:39:51,283 log "OPTIONS /api/scholarships/match/ HTTP/1.1" 200 0
+INFO 2026-02-15 10:39:51,284 log "OPTIONS /api/profiles/me/ HTTP/1.1" 200 0
+INFO 2026-02-15 10:39:51,294 log "OPTIONS /api/applications/ HTTP/1.1" 200 0
+INFO 2026-02-15 10:39:51,296 log "OPTIONS /api/notifications/unread_count/ HTTP/1.1" 200 0
+INFO 2026-02-15 10:39:51,301 log "OPTIONS /api/profiles/me/ HTTP/1.1" 200 0
+INFO 2026-02-15 10:39:51,302 log "OPTIONS /api/scholarships/match/ HTTP/1.1" 200 0
+INFO 2026-02-15 10:39:51,307 log "OPTIONS /api/applications/ HTTP/1.1" 200 0
+INFO 2026-02-15 10:39:51,307 log "OPTIONS /api/notifications/unread_count/ HTTP/1.1" 200 0
+INFO 2026-02-15 10:39:51,330 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 10:39:51,340 log "GET /api/profiles/me/ HTTP/1.1" 200 369
+INFO 2026-02-15 10:39:51,352 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 10:39:51,368 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 10:39:51,382 log "GET /api/profiles/me/ HTTP/1.1" 200 369
+INFO 2026-02-15 10:39:51,395 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 10:39:51,400 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 10:39:51,411 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 10:40:00,516 log "OPTIONS /api/recommend-career/recommend/ HTTP/1.1" 200 0
+INFO 2026-02-15 10:40:00,532 log "POST /api/recommend-career/recommend/ HTTP/1.1" 200 18
+INFO 2026-02-15 10:40:00,584 log "POST /api/recommend-career/recommend/ HTTP/1.1" 200 18
+INFO 2026-02-15 10:40:00,595 log "POST /api/recommend-career/recommend/ HTTP/1.1" 200 18
+INFO 2026-02-15 10:40:05,889 log "GET /api/profiles/me/ HTTP/1.1" 200 369
+INFO 2026-02-15 10:40:05,909 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 10:40:05,910 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 10:40:05,915 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 10:40:05,927 log "GET /api/profiles/me/ HTTP/1.1" 200 369
+INFO 2026-02-15 10:40:05,937 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 10:40:05,945 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 10:40:05,954 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 10:40:07,769 log "OPTIONS /api/scholarships/ HTTP/1.1" 200 0
+INFO 2026-02-15 10:40:07,782 log "OPTIONS /api/scholarships/ HTTP/1.1" 200 0
+INFO 2026-02-15 10:40:07,801 log "GET /api/scholarships/ HTTP/1.1" 200 52
+INFO 2026-02-15 10:40:07,806 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 10:40:07,810 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 10:40:07,819 log "GET /api/scholarships/ HTTP/1.1" 200 52
+INFO 2026-02-15 10:40:09,423 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 10:40:09,430 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 10:40:09,432 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 10:40:09,436 log "GET /api/profiles/me/ HTTP/1.1" 200 369
+INFO 2026-02-15 10:40:09,442 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 10:40:09,460 log "GET /api/profiles/me/ HTTP/1.1" 200 369
+INFO 2026-02-15 10:40:09,466 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 10:40:09,467 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 10:40:11,125 log "GET /api/profiles/me/ HTTP/1.1" 200 369
+INFO 2026-02-15 10:40:11,154 log "GET /api/profiles/me/ HTTP/1.1" 200 369
+INFO 2026-02-15 10:40:31,638 log "OPTIONS /api/profiles/profiles/ HTTP/1.1" 200 0
+WARNING 2026-02-15 10:40:31,650 log Not Found: /api/profiles/profiles/
+WARNING 2026-02-15 10:40:31,651 log "PATCH /api/profiles/profiles/ HTTP/1.1" 404 23
+WARNING 2026-02-15 10:40:35,687 log Not Found: /api/profiles/profiles/
+WARNING 2026-02-15 10:40:35,688 log "PATCH /api/profiles/profiles/ HTTP/1.1" 404 23
+WARNING 2026-02-15 10:40:41,083 log Not Found: /api/profiles/profiles/
+WARNING 2026-02-15 10:40:41,085 log "PATCH /api/profiles/profiles/ HTTP/1.1" 404 23
+WARNING 2026-02-15 10:40:41,245 log Not Found: /api/profiles/profiles/
+WARNING 2026-02-15 10:40:41,246 log "PATCH /api/profiles/profiles/ HTTP/1.1" 404 23
+WARNING 2026-02-15 10:40:41,382 log Not Found: /api/profiles/profiles/
+WARNING 2026-02-15 10:40:41,383 log "PATCH /api/profiles/profiles/ HTTP/1.1" 404 23
+INFO 2026-02-15 10:40:42,498 log "GET /api/profiles/me/ HTTP/1.1" 200 369
+INFO 2026-02-15 10:40:42,522 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 10:40:42,532 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 10:40:42,549 log "GET /api/profiles/me/ HTTP/1.1" 200 369
+INFO 2026-02-15 10:40:42,550 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 10:40:42,573 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 10:40:42,575 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 10:40:42,577 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 10:40:47,148 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 10:40:47,170 log "GET /api/profiles/me/ HTTP/1.1" 200 369
+INFO 2026-02-15 10:40:47,182 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 10:40:47,184 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 10:40:47,187 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 10:40:47,189 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 10:40:47,201 log "GET /api/profiles/me/ HTTP/1.1" 200 369
+INFO 2026-02-15 10:40:47,206 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 10:40:53,380 log "GET /api/profiles/me/ HTTP/1.1" 200 369
+INFO 2026-02-15 10:40:56,065 log "GET /api/profiles/me/ HTTP/1.1" 200 369
+WARNING 2026-02-15 10:41:47,484 log Not Found: /api/profiles/profiles/
+WARNING 2026-02-15 10:41:47,486 log "PATCH /api/profiles/profiles/ HTTP/1.1" 404 23
+WARNING 2026-02-15 10:41:49,743 log Not Found: /api/profiles/profiles/
+WARNING 2026-02-15 10:41:49,744 log "PATCH /api/profiles/profiles/ HTTP/1.1" 404 23
+WARNING 2026-02-15 10:41:50,342 log Not Found: /api/profiles/profiles/
+WARNING 2026-02-15 10:41:50,343 log "PATCH /api/profiles/profiles/ HTTP/1.1" 404 23
+WARNING 2026-02-15 10:41:50,553 log Not Found: /api/profiles/profiles/
+WARNING 2026-02-15 10:41:50,554 log "PATCH /api/profiles/profiles/ HTTP/1.1" 404 23
+WARNING 2026-02-15 10:41:50,743 log Not Found: /api/profiles/profiles/
+WARNING 2026-02-15 10:41:50,744 log "PATCH /api/profiles/profiles/ HTTP/1.1" 404 23
+INFO 2026-02-15 10:42:43,753 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 10:42:43,761 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 10:42:43,779 log "GET /api/profiles/me/ HTTP/1.1" 200 369
+INFO 2026-02-15 10:42:43,800 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 10:42:43,801 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 10:42:43,829 log "GET /api/profiles/me/ HTTP/1.1" 200 369
+INFO 2026-02-15 10:42:43,831 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 10:42:43,848 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 10:42:46,516 log "OPTIONS /api/auth/users/logout/ HTTP/1.1" 200 0
+INFO 2026-02-15 10:42:46,543 log "POST /api/auth/users/logout/ HTTP/1.1" 200 37
+WARNING 2026-02-15 10:44:28,770 log Bad Request: /api/auth/login/
+WARNING 2026-02-15 10:44:28,772 log "POST /api/auth/login/ HTTP/1.1" 400 40
+WARNING 2026-02-15 10:44:33,728 log Bad Request: /api/auth/login/
+WARNING 2026-02-15 10:44:33,729 log "POST /api/auth/login/ HTTP/1.1" 400 40
+WARNING 2026-02-15 10:44:34,568 log Bad Request: /api/auth/login/
+WARNING 2026-02-15 10:44:34,571 log "POST /api/auth/login/ HTTP/1.1" 400 40
+WARNING 2026-02-15 10:44:34,791 log Bad Request: /api/auth/login/
+WARNING 2026-02-15 10:44:34,793 log "POST /api/auth/login/ HTTP/1.1" 400 40
+WARNING 2026-02-15 10:44:43,088 log Bad Request: /api/auth/login/
+WARNING 2026-02-15 10:44:43,090 log "POST /api/auth/login/ HTTP/1.1" 400 40
+INFO 2026-02-15 10:44:59,394 log "GET /admin/accounts/user/ HTTP/1.1" 200 24520
+INFO 2026-02-15 10:44:59,487 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-15 10:45:03,573 log "GET /admin/accounts/user/6/change/ HTTP/1.1" 200 37492
+INFO 2026-02-15 10:45:03,643 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-15 10:45:05,306 autoreload D:\FYP\Path2Prep\backend\profiles\views.py changed, reloading.
+INFO 2026-02-15 10:45:05,686 autoreload D:\FYP\Path2Prep\backend\profiles\views.py changed, reloading.
+INFO 2026-02-15 10:45:16,241 autoreload Watching for file changes with StatReloader
+INFO 2026-02-15 10:45:16,249 autoreload Watching for file changes with StatReloader
+INFO 2026-02-15 10:45:20,274 log "GET /admin/accounts/user/6/password/ HTTP/1.1" 200 19208
+INFO 2026-02-15 10:45:25,401 log "POST /admin/logout/ HTTP/1.1" 200 3475
+INFO 2026-02-15 10:45:32,894 log "GET / HTTP/1.1" 200 67
+INFO 2026-02-15 10:45:36,830 log "GET /admin HTTP/1.1" 301 0
+INFO 2026-02-15 10:45:36,839 log "GET /admin/ HTTP/1.1" 302 0
+INFO 2026-02-15 10:45:36,903 log "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4080
+INFO 2026-02-15 10:45:37,153 log "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 3538
+INFO 2026-02-15 10:45:37,160 log "GET /static/admin/css/base.css HTTP/1.1" 200 23100
+INFO 2026-02-15 10:45:37,186 log "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2026-02-15 10:45:37,192 log "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2026-02-15 10:45:37,224 log "GET /static/admin/css/responsive.css HTTP/1.1" 200 16273
+INFO 2026-02-15 10:45:37,258 log "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2026-02-15 10:45:37,292 log "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2026-02-15 10:45:42,127 log "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2026-02-15 10:45:42,194 log "GET /admin/ HTTP/1.1" 200 19623
+INFO 2026-02-15 10:45:42,290 log "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2026-02-15 10:45:42,293 log "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 593
+INFO 2026-02-15 10:45:42,301 log "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 978
+INFO 2026-02-15 10:45:46,718 log "GET /admin/profiles/profile/ HTTP/1.1" 200 21831
+INFO 2026-02-15 10:45:46,838 log "GET /static/admin/css/changelists.css HTTP/1.1" 200 7498
+INFO 2026-02-15 10:45:46,854 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-15 10:45:46,856 log "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2026-02-15 10:45:46,871 log "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2026-02-15 10:45:46,914 log "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2026-02-15 10:45:46,958 log "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2026-02-15 10:45:46,961 log "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2026-02-15 10:45:46,973 log "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2026-02-15 10:45:46,985 log "GET /static/admin/img/search.svg HTTP/1.1" 200 607
+INFO 2026-02-15 10:45:47,095 log "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2026-02-15 10:45:47,169 log "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2026-02-15 10:45:47,281 log "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2026-02-15 10:45:47,358 log "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 593
+INFO 2026-02-15 10:45:47,359 log "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 928
+INFO 2026-02-15 10:45:51,643 log "GET /admin/profiles/profile/1/change/ HTTP/1.1" 200 30190
+INFO 2026-02-15 10:45:51,706 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-15 10:45:51,730 log "GET /static/admin/css/forms.css HTTP/1.1" 200 8817
+INFO 2026-02-15 10:45:51,741 log "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2026-02-15 10:45:51,770 log "GET /static/admin/css/widgets.css HTTP/1.1" 200 11811
+INFO 2026-02-15 10:45:51,795 log "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2026-02-15 10:45:55,176 log "GET /admin/profiles/profile/ HTTP/1.1" 200 21831
+INFO 2026-02-15 10:45:57,945 log "GET /admin/accounts/user/ HTTP/1.1" 200 24520
+INFO 2026-02-15 10:45:58,011 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-15 10:45:58,029 log "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 558
+INFO 2026-02-15 10:45:58,031 log "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 645
+INFO 2026-02-15 10:45:58,110 log "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1761
+INFO 2026-02-15 10:46:01,191 log "GET /admin/accounts/user/6/change/ HTTP/1.1" 200 37492
+INFO 2026-02-15 10:46:01,266 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-15 10:46:01,267 log "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4530
+INFO 2026-02-15 10:46:01,314 log "GET /static/admin/js/calendar.js HTTP/1.1" 200 9159
+INFO 2026-02-15 10:46:01,319 log "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19698
+INFO 2026-02-15 10:46:01,327 log "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 16428
+INFO 2026-02-15 10:46:01,453 log "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 805
+INFO 2026-02-15 10:46:01,454 log "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 2387
+INFO 2026-02-15 10:46:01,485 log "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1112
+INFO 2026-02-15 10:46:04,613 log "GET /admin/accounts/user/6/password/ HTTP/1.1" 200 19208
+INFO 2026-02-15 10:46:04,664 log "GET /static/admin/css/unusable_password_field.css HTTP/1.1" 200 663
+INFO 2026-02-15 10:46:14,289 log "POST /admin/accounts/user/6/password/ HTTP/1.1" 302 0
+INFO 2026-02-15 10:46:14,387 log "GET /admin/accounts/user/6/change/ HTTP/1.1" 200 37628
+INFO 2026-02-15 10:46:14,459 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-15 10:46:14,535 log "GET /static/admin/img/icon-yes-dark.svg HTTP/1.1" 200 558
+WARNING 2026-02-15 10:46:24,996 log Bad Request: /api/auth/login/
+WARNING 2026-02-15 10:46:24,998 log "POST /api/auth/login/ HTTP/1.1" 400 40
+WARNING 2026-02-15 10:46:48,384 log Bad Request: /api/auth/login/
+WARNING 2026-02-15 10:46:48,385 log "POST /api/auth/login/ HTTP/1.1" 400 40
+WARNING 2026-02-15 10:46:52,246 log Bad Request: /api/auth/login/
+WARNING 2026-02-15 10:46:52,248 log "POST /api/auth/login/ HTTP/1.1" 400 40
+WARNING 2026-02-15 10:46:53,065 log Bad Request: /api/auth/login/
+WARNING 2026-02-15 10:46:53,066 log "POST /api/auth/login/ HTTP/1.1" 400 40
+WARNING 2026-02-15 10:46:53,233 log Bad Request: /api/auth/login/
+WARNING 2026-02-15 10:46:53,234 log "POST /api/auth/login/ HTTP/1.1" 400 40
+WARNING 2026-02-15 10:46:53,421 log Bad Request: /api/auth/login/
+WARNING 2026-02-15 10:46:53,422 log "POST /api/auth/login/ HTTP/1.1" 400 40
+WARNING 2026-02-15 10:46:53,606 log Forbidden: /api/auth/login/
+WARNING 2026-02-15 10:46:53,607 log "POST /api/auth/login/ HTTP/1.1" 403 63
+WARNING 2026-02-15 10:46:54,701 log Forbidden: /api/auth/login/
+WARNING 2026-02-15 10:46:54,704 log "POST /api/auth/login/ HTTP/1.1" 403 63
+WARNING 2026-02-15 10:46:54,856 log Forbidden: /api/auth/login/
+WARNING 2026-02-15 10:46:54,858 log "POST /api/auth/login/ HTTP/1.1" 403 63
+WARNING 2026-02-15 10:47:00,770 log Forbidden: /api/auth/login/
+WARNING 2026-02-15 10:47:00,771 log "POST /api/auth/login/ HTTP/1.1" 403 63
+WARNING 2026-02-15 10:47:01,907 log Forbidden: /api/auth/login/
+WARNING 2026-02-15 10:47:01,907 log "POST /api/auth/login/ HTTP/1.1" 403 63
+INFO 2026-02-15 10:48:01,102 log "POST /api/auth/users/register/ HTTP/1.1" 201 732
+INFO 2026-02-15 10:48:01,194 log "GET /api/profiles/me/ HTTP/1.1" 200 369
+INFO 2026-02-15 10:48:01,214 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 10:48:01,229 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 10:48:01,248 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 10:48:01,264 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 10:48:01,282 log "GET /api/profiles/me/ HTTP/1.1" 200 369
+INFO 2026-02-15 10:48:01,297 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 10:48:01,310 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 10:48:05,077 log "GET /api/profiles/me/ HTTP/1.1" 200 369
+INFO 2026-02-15 10:48:05,094 log "GET /api/profiles/me/ HTTP/1.1" 200 369
+INFO 2026-02-15 10:48:17,329 log "PATCH /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 10:48:21,422 log "PATCH /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 10:48:25,449 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 10:48:25,450 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 10:48:25,461 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 10:48:25,462 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 10:48:25,476 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 10:48:25,491 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 10:48:25,495 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 10:48:25,498 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 10:48:27,961 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 10:48:27,971 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 10:48:27,975 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 10:48:27,975 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 10:48:27,990 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 10:48:28,009 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 10:48:28,015 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 10:48:28,021 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 10:48:32,136 log "POST /api/recommend-career/recommend/ HTTP/1.1" 200 18
+INFO 2026-02-15 10:48:32,184 log "POST /api/recommend-career/recommend/ HTTP/1.1" 200 18
+INFO 2026-02-15 10:48:32,189 log "POST /api/recommend-career/recommend/ HTTP/1.1" 200 18
+INFO 2026-02-15 10:48:33,098 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 10:48:33,113 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 10:48:33,115 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 10:48:33,117 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 10:48:33,129 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 10:48:33,132 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 10:48:33,144 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 10:48:33,151 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 10:48:34,585 log "POST /api/auth/users/logout/ HTTP/1.1" 200 37
+WARNING 2026-02-15 10:48:43,757 log Bad Request: /api/auth/login/
+WARNING 2026-02-15 10:48:43,758 log "POST /api/auth/login/ HTTP/1.1" 400 40
+INFO 2026-02-15 10:51:08,923 autoreload D:\FYP\Path2Prep\backend\accounts\views.py changed, reloading.
+INFO 2026-02-15 10:51:09,112 autoreload D:\FYP\Path2Prep\backend\accounts\views.py changed, reloading.
+INFO 2026-02-15 10:51:13,218 autoreload Watching for file changes with StatReloader
+INFO 2026-02-15 10:51:15,079 autoreload Watching for file changes with StatReloader
+INFO 2026-02-15 10:54:41,094 log "POST /api/auth/login/ HTTP/1.1" 200 732
+INFO 2026-02-15 10:54:41,173 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 10:54:41,173 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 10:54:41,190 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 10:54:41,199 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 10:54:41,207 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 10:54:41,218 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 10:54:41,227 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 10:54:41,232 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 10:54:45,522 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 10:54:45,539 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 10:54:48,294 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 10:54:48,301 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 10:54:48,313 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 10:54:48,314 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 10:54:48,318 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 10:54:48,330 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 10:54:48,333 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 10:54:48,341 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 10:54:49,163 log "POST /api/recommend-career/recommend/ HTTP/1.1" 200 18
+INFO 2026-02-15 10:54:49,216 log "POST /api/recommend-career/recommend/ HTTP/1.1" 200 18
+INFO 2026-02-15 10:54:49,217 log "POST /api/recommend-career/recommend/ HTTP/1.1" 200 18
+INFO 2026-02-15 10:54:50,735 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 10:54:50,747 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 10:54:50,747 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 10:54:50,747 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 10:54:50,761 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 10:54:50,783 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 10:54:50,783 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 10:54:50,785 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 10:54:51,533 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 10:54:51,534 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 10:54:51,545 log "GET /api/scholarships/ HTTP/1.1" 200 52
+INFO 2026-02-15 10:54:51,559 log "GET /api/scholarships/ HTTP/1.1" 200 52
+INFO 2026-02-15 10:54:53,315 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 10:54:53,318 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 10:54:53,320 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 10:54:53,320 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 10:54:53,335 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 10:54:53,341 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 10:54:53,350 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 10:54:53,351 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 10:55:03,532 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 10:55:03,547 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 10:55:04,908 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 10:55:04,913 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 10:55:04,914 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 10:55:04,915 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 10:55:04,938 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 10:55:04,944 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 10:55:04,954 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 10:55:04,955 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 10:55:06,383 log "POST /api/auth/users/logout/ HTTP/1.1" 200 37
+WARNING 2026-02-15 10:55:18,154 log Forbidden: /api/auth/login/
+WARNING 2026-02-15 10:55:18,155 log "POST /api/auth/login/ HTTP/1.1" 403 63
+INFO 2026-02-15 10:55:20,252 log "POST /api/auth/login/ HTTP/1.1" 200 732
+INFO 2026-02-15 10:55:20,348 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 10:55:20,362 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 10:55:20,373 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 10:55:20,374 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 10:55:20,384 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 10:55:20,424 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 10:55:20,436 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 10:55:20,440 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 10:55:39,596 log "OPTIONS /api/auth/users/me/ HTTP/1.1" 200 0
+INFO 2026-02-15 10:55:39,597 log "OPTIONS /api/auth/users/me/ HTTP/1.1" 200 0
+INFO 2026-02-15 10:55:39,608 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 10:55:39,620 log "GET /api/auth/users/me/ HTTP/1.1" 200 235
+INFO 2026-02-15 10:55:39,637 log "GET /api/auth/users/me/ HTTP/1.1" 200 235
+INFO 2026-02-15 10:55:39,638 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 10:55:41,896 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 10:55:41,914 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 10:55:49,620 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 10:55:49,622 log "GET /api/auth/users/me/ HTTP/1.1" 200 235
+INFO 2026-02-15 10:55:49,625 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 10:55:49,636 log "GET /api/scholarships/ HTTP/1.1" 200 52
+INFO 2026-02-15 10:55:49,660 log "GET /api/auth/users/me/ HTTP/1.1" 200 235
+INFO 2026-02-15 10:55:49,671 log "GET /api/scholarships/ HTTP/1.1" 200 52
+INFO 2026-02-15 10:55:53,961 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 10:55:53,969 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 10:56:01,486 log "GET /api/scholarships/ HTTP/1.1" 200 52
+INFO 2026-02-15 10:56:01,492 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 10:56:01,492 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 10:56:01,500 log "GET /api/scholarships/ HTTP/1.1" 200 52
+INFO 2026-02-15 10:56:02,394 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 10:56:02,395 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 10:56:02,399 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 10:56:02,407 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 10:56:02,409 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 10:56:02,430 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 10:56:02,435 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 10:56:02,435 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 10:56:32,179 log "GET /admin/recommendations/careerrecommendation/ HTTP/1.1" 200 20150
+INFO 2026-02-15 10:56:32,239 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-15 10:56:37,219 log "GET /admin/recommendations/careerrecommendation/add/ HTTP/1.1" 200 23807
+INFO 2026-02-15 10:56:37,265 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-15 10:56:46,356 log "GET /admin/careers/career/ HTTP/1.1" 200 19216
+INFO 2026-02-15 10:56:46,419 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-15 10:56:50,458 log "GET /admin/careers/career/add/ HTTP/1.1" 200 21964
+INFO 2026-02-15 10:56:50,521 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-15 10:57:01,754 log "GET /admin/scholarships/bookmark/ HTTP/1.1" 200 19677
+INFO 2026-02-15 10:57:01,791 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-15 10:57:05,044 log "GET /admin/careers/career/add/ HTTP/1.1" 200 21964
+INFO 2026-02-15 11:02:46,855 log "POST /api/auth/users/logout/ HTTP/1.1" 200 37
+INFO 2026-02-15 11:02:56,957 log "GET /admin/accounts/user/ HTTP/1.1" 200 24993
+INFO 2026-02-15 11:02:57,027 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-15 11:03:03,943 log "GET /admin/accounts/user/7/change/ HTTP/1.1" 200 37464
+INFO 2026-02-15 11:03:03,995 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-15 11:03:14,897 log "POST /admin/accounts/user/7/change/ HTTP/1.1" 302 0
+INFO 2026-02-15 11:03:14,948 log "GET /admin/accounts/user/ HTTP/1.1" 200 25215
+INFO 2026-02-15 11:03:14,993 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-15 11:03:27,206 log "POST /api/auth/login/ HTTP/1.1" 200 732
+INFO 2026-02-15 11:03:27,283 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 11:03:27,285 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 11:03:27,306 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 11:03:27,308 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 11:03:27,322 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 11:03:27,327 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 11:03:27,341 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 11:03:27,349 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 11:03:36,600 log "GET /admin/accounts/user/7/change/ HTTP/1.1" 200 37496
+INFO 2026-02-15 11:03:36,657 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-15 11:03:44,925 log "GET /admin/profiles/profile/ HTTP/1.1" 200 22551
+INFO 2026-02-15 11:03:44,984 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-15 11:03:47,979 log "GET /admin/profiles/profile/2/change/ HTTP/1.1" 200 30352
+INFO 2026-02-15 11:03:48,034 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-15 11:03:53,932 log "GET /admin/profiles/profile/ HTTP/1.1" 200 22551
+INFO 2026-02-15 11:03:57,868 log "GET /admin/accounts/profilecompletion/ HTTP/1.1" 200 21366
+INFO 2026-02-15 11:03:57,913 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-15 11:03:59,874 log "GET /admin/accounts/profilecompletion/7/change/ HTTP/1.1" 200 22922
+INFO 2026-02-15 11:03:59,925 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-15 11:04:03,124 log "GET /admin/accounts/profilecompletion/ HTTP/1.1" 200 21366
+INFO 2026-02-15 11:04:04,072 log "GET /admin/profiles/profile/ HTTP/1.1" 200 22551
+INFO 2026-02-15 11:04:05,457 log "GET /admin/accounts/user/7/change/ HTTP/1.1" 200 37496
+INFO 2026-02-15 11:04:14,592 log "GET /admin/accounts/user/ HTTP/1.1" 200 25005
+INFO 2026-02-15 11:04:14,652 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-15 11:04:19,871 log "GET /admin/accounts/user/5/change/ HTTP/1.1" 200 37448
+INFO 2026-02-15 11:04:19,920 log "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-15 11:04:27,080 log "OPTIONS /api/profiles/me/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:27,085 log "OPTIONS /api/scholarships/match/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:27,086 log "OPTIONS /api/applications/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:27,093 log "OPTIONS /api/auth/users/me/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:27,094 log "OPTIONS /api/profiles/me/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:27,095 log "OPTIONS /api/notifications/unread_count/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:27,098 log "OPTIONS /api/scholarships/match/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:27,107 log "OPTIONS /api/applications/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:27,115 log "OPTIONS /api/auth/users/me/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:27,119 log "OPTIONS /api/notifications/unread_count/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:27,157 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 11:04:27,166 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 11:04:27,169 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 11:04:27,191 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 11:04:27,203 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 11:04:27,209 log "GET /api/auth/users/me/ HTTP/1.1" 200 235
+INFO 2026-02-15 11:04:27,223 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 11:04:27,234 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 11:04:27,242 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 11:04:27,250 log "GET /api/auth/users/me/ HTTP/1.1" 200 235
+INFO 2026-02-15 11:04:28,330 log "OPTIONS /api/profiles/me/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:28,332 log "OPTIONS /api/scholarships/match/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:28,334 log "OPTIONS /api/applications/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:28,338 log "OPTIONS /api/notifications/unread_count/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:28,353 log "OPTIONS /api/profiles/me/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:28,354 log "OPTIONS /api/auth/users/me/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:28,355 log "OPTIONS /api/scholarships/match/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:28,355 log "OPTIONS /api/applications/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:28,356 log "OPTIONS /api/auth/users/me/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:28,357 log "OPTIONS /api/notifications/unread_count/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:28,414 basehttp - Broken pipe from ('127.0.0.1', 49962)
+INFO 2026-02-15 11:04:28,433 basehttp - Broken pipe from ('127.0.0.1', 50063)
+INFO 2026-02-15 11:04:28,434 basehttp - Broken pipe from ('127.0.0.1', 49961)
+INFO 2026-02-15 11:04:28,435 basehttp - Broken pipe from ('127.0.0.1', 50062)
+INFO 2026-02-15 11:04:28,436 basehttp - Broken pipe from ('127.0.0.1', 50065)
+INFO 2026-02-15 11:04:28,436 basehttp - Broken pipe from ('127.0.0.1', 50064)
+INFO 2026-02-15 11:04:29,034 log "OPTIONS /api/profiles/me/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:29,035 log "OPTIONS /api/scholarships/match/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:29,047 log "OPTIONS /api/applications/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:29,048 log "OPTIONS /api/notifications/unread_count/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:29,053 log "OPTIONS /api/auth/users/me/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:29,054 log "OPTIONS /api/scholarships/match/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:29,059 log "OPTIONS /api/profiles/me/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:29,061 log "OPTIONS /api/applications/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:29,065 log "OPTIONS /api/notifications/unread_count/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:29,073 log "OPTIONS /api/auth/users/me/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:29,093 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 11:04:29,114 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 11:04:29,129 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 11:04:29,144 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 11:04:29,155 log "GET /api/auth/users/me/ HTTP/1.1" 200 235
+INFO 2026-02-15 11:04:29,173 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 11:04:29,188 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 11:04:29,204 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 11:04:29,206 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 11:04:29,221 log "GET /api/auth/users/me/ HTTP/1.1" 200 235
+INFO 2026-02-15 11:04:29,991 log "OPTIONS /api/profiles/me/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:29,992 log "OPTIONS /api/scholarships/match/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:29,998 log "OPTIONS /api/applications/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:30,014 log "OPTIONS /api/notifications/unread_count/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:30,014 log "OPTIONS /api/auth/users/me/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:30,015 log "OPTIONS /api/applications/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:30,015 log "OPTIONS /api/scholarships/match/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:30,021 log "OPTIONS /api/profiles/me/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:30,032 log "OPTIONS /api/notifications/unread_count/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:30,033 log "OPTIONS /api/auth/users/me/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:30,072 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 11:04:30,090 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 11:04:30,097 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 11:04:30,103 log "GET /api/auth/users/me/ HTTP/1.1" 200 235
+INFO 2026-02-15 11:04:30,103 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 11:04:30,118 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 11:04:30,134 log "GET /api/auth/users/me/ HTTP/1.1" 200 235
+INFO 2026-02-15 11:04:30,153 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 11:04:30,155 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 11:04:30,156 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 11:04:30,850 log "OPTIONS /api/profiles/me/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:30,852 log "OPTIONS /api/scholarships/match/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:30,857 log "OPTIONS /api/applications/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:30,863 log "OPTIONS /api/profiles/me/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:30,863 log "OPTIONS /api/notifications/unread_count/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:30,864 log "OPTIONS /api/auth/users/me/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:30,867 log "OPTIONS /api/scholarships/match/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:30,873 log "OPTIONS /api/applications/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:30,881 log "OPTIONS /api/notifications/unread_count/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:30,893 log "OPTIONS /api/auth/users/me/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:30,929 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 11:04:30,945 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 11:04:30,946 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 11:04:30,947 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 11:04:30,950 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 11:04:30,956 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 11:04:30,989 log "GET /api/auth/users/me/ HTTP/1.1" 200 235
+INFO 2026-02-15 11:04:30,992 log "GET /api/auth/users/me/ HTTP/1.1" 200 235
+INFO 2026-02-15 11:04:30,993 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 11:04:30,995 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 11:04:32,292 basehttp - Broken pipe from ('127.0.0.1', 50113)
+INFO 2026-02-15 11:04:32,301 basehttp - Broken pipe from ('127.0.0.1', 50123)
+INFO 2026-02-15 11:04:32,302 basehttp - Broken pipe from ('127.0.0.1', 50124)
+INFO 2026-02-15 11:04:32,303 basehttp - Broken pipe from ('127.0.0.1', 50122)
+INFO 2026-02-15 11:04:32,303 basehttp - Broken pipe from ('127.0.0.1', 50114)
+INFO 2026-02-15 11:04:32,304 basehttp - Broken pipe from ('127.0.0.1', 50121)
+INFO 2026-02-15 11:04:32,580 basehttp - Broken pipe from ('127.0.0.1', 50134)
+INFO 2026-02-15 11:04:33,545 log "OPTIONS /api/applications/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:33,545 log "OPTIONS /api/scholarships/match/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:33,545 log "OPTIONS /api/profiles/me/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:33,549 log "OPTIONS /api/notifications/unread_count/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:33,557 log "OPTIONS /api/auth/users/me/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:33,567 log "OPTIONS /api/scholarships/match/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:33,568 log "OPTIONS /api/profiles/me/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:33,569 log "OPTIONS /api/applications/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:33,570 log "OPTIONS /api/notifications/unread_count/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:33,602 log "OPTIONS /api/auth/users/me/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:33,624 basehttp - Broken pipe from ('127.0.0.1', 50139)
+INFO 2026-02-15 11:04:33,624 basehttp - Broken pipe from ('127.0.0.1', 50140)
+INFO 2026-02-15 11:04:33,626 basehttp - Broken pipe from ('127.0.0.1', 50141)
+INFO 2026-02-15 11:04:35,692 log "OPTIONS /api/scholarships/match/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:35,694 log "OPTIONS /api/applications/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:35,697 log "OPTIONS /api/profiles/me/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:35,705 log "OPTIONS /api/notifications/unread_count/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:35,710 log "OPTIONS /api/profiles/me/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:35,714 log "OPTIONS /api/scholarships/match/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:35,715 log "OPTIONS /api/auth/users/me/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:35,721 log "OPTIONS /api/applications/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:35,728 log "OPTIONS /api/notifications/unread_count/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:35,738 log "OPTIONS /api/auth/users/me/ HTTP/1.1" 200 0
+INFO 2026-02-15 11:04:35,780 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 11:04:35,804 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 11:04:35,805 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 11:04:35,808 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 11:04:35,844 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 11:04:35,855 log "GET /api/auth/users/me/ HTTP/1.1" 200 235
+INFO 2026-02-15 11:04:35,858 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 11:04:35,860 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 11:04:35,884 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 11:04:35,886 log "GET /api/auth/users/me/ HTTP/1.1" 200 235
+INFO 2026-02-15 11:04:41,628 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 11:04:41,629 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 11:04:41,632 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 11:04:41,633 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 11:04:41,648 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 11:04:41,659 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 11:04:41,661 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 11:04:41,668 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 11:04:42,621 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 11:04:42,638 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 11:04:44,566 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 11:04:44,577 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 11:04:44,580 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 11:04:44,587 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 11:04:44,597 log "POST /api/scholarships/match/ HTTP/1.1" 200 14
+INFO 2026-02-15 11:04:44,613 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 11:04:44,614 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 11:04:44,615 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 19:15:00,386 log "OPTIONS /api/scholarships/ HTTP/1.1" 200 0
+INFO 2026-02-15 19:15:00,389 log "OPTIONS /api/scholarships/match/ HTTP/1.1" 200 0
+WARNING 2026-02-15 19:15:00,409 log Unauthorized: /api/scholarships/match/
+INFO 2026-02-15 19:15:00,402 log "OPTIONS /api/scholarships/ HTTP/1.1" 200 0
+WARNING 2026-02-15 19:15:00,402 log Unauthorized: /api/scholarships/
+INFO 2026-02-15 19:15:00,421 log "OPTIONS /api/scholarships/match/ HTTP/1.1" 200 0
+WARNING 2026-02-15 19:15:00,421 log "POST /api/scholarships/match/ HTTP/1.1" 401 172
+WARNING 2026-02-15 19:15:00,438 log "GET /api/scholarships/ HTTP/1.1" 401 172
+WARNING 2026-02-15 19:15:00,450 log Unauthorized: /api/scholarships/
+WARNING 2026-02-15 19:15:00,456 log Unauthorized: /api/scholarships/match/
+INFO 2026-02-15 19:15:00,463 log "OPTIONS /api/auth/token/refresh/ HTTP/1.1" 200 0
+WARNING 2026-02-15 19:15:00,466 log "GET /api/scholarships/ HTTP/1.1" 401 172
+WARNING 2026-02-15 19:15:00,470 log "POST /api/scholarships/match/ HTTP/1.1" 401 172
+INFO 2026-02-15 19:15:00,473 log "OPTIONS /api/auth/token/refresh/ HTTP/1.1" 200 0
+INFO 2026-02-15 19:15:00,573 log "POST /api/auth/token/refresh/ HTTP/1.1" 200 489
+INFO 2026-02-15 19:15:00,599 log "POST /api/auth/token/refresh/ HTTP/1.1" 200 489
+INFO 2026-02-15 19:15:00,612 log "POST /api/auth/token/refresh/ HTTP/1.1" 200 489
+INFO 2026-02-15 19:15:00,661 log "POST /api/scholarships/match/ HTTP/1.1" 200 7621
+INFO 2026-02-15 19:15:00,667 log "POST /api/auth/token/refresh/ HTTP/1.1" 200 489
+INFO 2026-02-15 19:15:00,697 log "POST /api/scholarships/match/ HTTP/1.1" 200 7621
+INFO 2026-02-15 19:15:00,704 log "GET /api/scholarships/ HTTP/1.1" 200 7090
+INFO 2026-02-15 19:15:00,727 log "GET /api/scholarships/ HTTP/1.1" 200 7090
+INFO 2026-02-15 19:15:05,201 log "OPTIONS /api/profiles/me/ HTTP/1.1" 200 0
+INFO 2026-02-15 19:15:05,202 log "OPTIONS /api/applications/ HTTP/1.1" 200 0
+INFO 2026-02-15 19:15:05,202 log "OPTIONS /api/notifications/unread_count/ HTTP/1.1" 200 0
+INFO 2026-02-15 19:15:05,205 log "OPTIONS /api/profiles/me/ HTTP/1.1" 200 0
+INFO 2026-02-15 19:15:05,211 log "OPTIONS /api/notifications/unread_count/ HTTP/1.1" 200 0
+INFO 2026-02-15 19:15:05,215 log "OPTIONS /api/applications/ HTTP/1.1" 200 0
+INFO 2026-02-15 19:15:05,266 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 19:15:05,275 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 19:15:05,293 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 19:15:05,309 log "POST /api/scholarships/match/ HTTP/1.1" 200 3789
+INFO 2026-02-15 19:15:05,315 log "POST /api/scholarships/match/ HTTP/1.1" 200 3789
+INFO 2026-02-15 19:15:05,337 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 19:15:05,337 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 19:15:05,345 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 19:15:11,876 log "OPTIONS /api/recommend-career/recommend/ HTTP/1.1" 200 0
+INFO 2026-02-15 19:15:11,926 log "POST /api/recommend-career/recommend/ HTTP/1.1" 200 700
+INFO 2026-02-15 19:15:12,063 log "POST /api/recommend-career/recommend/ HTTP/1.1" 200 700
+INFO 2026-02-15 19:15:12,118 log "POST /api/recommend-career/recommend/ HTTP/1.1" 200 700
+INFO 2026-02-15 19:15:17,452 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 19:15:17,471 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 19:15:17,481 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 19:15:17,488 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 19:15:17,508 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 19:15:17,528 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 19:15:17,528 log "POST /api/scholarships/match/ HTTP/1.1" 200 3789
+INFO 2026-02-15 19:15:17,543 log "POST /api/scholarships/match/ HTTP/1.1" 200 3789
+INFO 2026-02-15 19:15:24,793 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 19:15:24,803 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 19:15:24,833 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 19:15:24,834 log "POST /api/scholarships/match/ HTTP/1.1" 200 3789
+INFO 2026-02-15 19:15:24,839 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 19:15:24,870 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 19:15:24,870 log "POST /api/scholarships/match/ HTTP/1.1" 200 3789
+INFO 2026-02-15 19:15:24,878 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 19:15:28,140 log "POST /api/recommend-career/recommend/ HTTP/1.1" 200 700
+INFO 2026-02-15 19:15:28,228 log "POST /api/recommend-career/recommend/ HTTP/1.1" 200 700
+INFO 2026-02-15 19:15:28,268 log "POST /api/recommend-career/recommend/ HTTP/1.1" 200 700
+INFO 2026-02-15 19:15:29,803 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 19:15:29,810 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 19:15:29,833 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 19:15:29,835 log "POST /api/scholarships/match/ HTTP/1.1" 200 3789
+INFO 2026-02-15 19:15:29,868 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 19:15:29,894 log "POST /api/scholarships/match/ HTTP/1.1" 200 3789
+INFO 2026-02-15 19:15:29,899 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 19:15:29,901 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 19:15:33,794 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 19:15:33,804 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 19:15:33,815 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 19:15:33,841 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 19:15:33,843 log "POST /api/scholarships/match/ HTTP/1.1" 200 3789
+INFO 2026-02-15 19:15:33,864 log "POST /api/scholarships/match/ HTTP/1.1" 200 3789
+INFO 2026-02-15 19:15:33,867 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 19:15:33,873 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 19:18:29,572 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 19:18:29,583 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 19:18:29,589 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 19:18:29,619 log "POST /api/scholarships/match/ HTTP/1.1" 200 3789
+INFO 2026-02-15 19:18:29,622 log "POST /api/scholarships/match/ HTTP/1.1" 200 3789
+INFO 2026-02-15 19:18:29,632 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 19:18:29,635 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 19:18:29,636 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 19:18:30,677 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 19:18:30,693 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 19:18:34,977 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 19:18:34,984 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 19:18:34,985 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 19:18:35,011 log "POST /api/scholarships/match/ HTTP/1.1" 200 3789
+INFO 2026-02-15 19:18:35,021 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 19:18:35,022 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 19:18:35,039 log "POST /api/scholarships/match/ HTTP/1.1" 200 3789
+INFO 2026-02-15 19:18:35,049 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 19:18:37,129 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 19:18:37,149 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 19:18:39,693 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 19:18:39,693 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 19:18:39,710 log "GET /api/profiles/me/ HTTP/1.1" 200 408
+INFO 2026-02-15 19:18:39,733 log "POST /api/scholarships/match/ HTTP/1.1" 200 3789
+INFO 2026-02-15 19:18:39,764 log "GET /api/applications/ HTTP/1.1" 200 52
+INFO 2026-02-15 19:18:39,769 log "POST /api/scholarships/match/ HTTP/1.1" 200 3789
+INFO 2026-02-15 19:18:39,769 log "GET /api/notifications/unread_count/ HTTP/1.1" 200 18
+INFO 2026-02-15 19:18:39,777 log "GET /api/profiles/me/ HTTP/1.1" 200 408
