@@ -121,8 +121,28 @@ class ApiService {
     return response.data;
   }
 
+  async uploadProfilePicture(file: File): Promise<Profile> {
+    const formData = new FormData();
+    formData.append('profile_picture', file);
+    const response = await this.api.patch('/profiles/me/', formData, {
+      headers: { 'Content-Type': 'multipart/form-data' },
+    });
+    return response.data;
+  }
+
   async createProfile(profileData: Partial<Profile>): Promise<Profile> {
     const response = await this.api.post('/profiles/profiles/', profileData);
+    return response.data;
+  }
+
+  // Dropdown Options (admin-managed)
+  async getMajorOptions(): Promise<{ id: number; name: string }[]> {
+    const response = await this.api.get('/options/majors/');
+    return response.data;
+  }
+
+  async getCountryOptions(): Promise<{ id: number; name: string }[]> {
+    const response = await this.api.get('/options/countries/');
     return response.data;
   }
 
@@ -196,7 +216,8 @@ class ApiService {
   // Notifications
   async getNotifications(): Promise<Notification[]> {
     const response = await this.api.get('/notifications/');
-    return response.data;
+    // DRF returns paginated { count, results } or plain array
+    return response.data.results || response.data;
   }
 
   async markNotificationRead(id: number): Promise<void> {

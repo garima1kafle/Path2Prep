@@ -16,11 +16,61 @@ const initialState: AuthState = {
   error: null,
 };
 
+/**
+ * Parse Django REST Framework error responses into user-friendly messages.
+ * Django errors can be: string, array of strings, or object with field keys.
+ */
+function parseApiError(error: any): string {
+  if (!error) return 'Something went wrong. Please try again.';
+
+  // Axios error with response data
+  const data = error?.response?.data;
+  if (!data) {
+    if (error?.message) return error.message;
+    return 'Network error. Please check your connection.';
+  }
+
+  // Single string error
+  if (typeof data === 'string') return data;
+
+  // { detail: "..." } format (DRF default)
+  if (data.detail) return data.detail;
+
+  // { non_field_errors: ["..."] }
+  if (data.non_field_errors) {
+    return Array.isArray(data.non_field_errors)
+      ? data.non_field_errors.join(' ')
+      : data.non_field_errors;
+  }
+
+  // { field: ["error1", "error2"], ... } format
+  if (typeof data === 'object') {
+    const messages: string[] = [];
+    for (const [field, errors] of Object.entries(data)) {
+      const fieldName = field
+        .replace(/_/g, ' ')
+        .replace(/\b\w/g, (c) => c.toUpperCase());
+      if (Array.isArray(errors)) {
+        messages.push(`${fieldName}: ${(errors as string[]).join(' ')}`);
+      } else if (typeof errors === 'string') {
+        messages.push(`${fieldName}: ${errors}`);
+      }
+    }
+    if (messages.length > 0) return messages.join('\n');
+  }
+
+  return 'Something went wrong. Please try again.';
+}
+
 export const login = createAsyncThunk(
   'auth/login',
-  async ({ email, password }: { email: string; password: string }) => {
-    const response = await apiService.login(email, password);
-    return response;
+  async ({ email, password }: { email: string; password: string }, { rejectWithValue }) => {
+    try {
+      const response = await apiService.login(email, password);
+      return response;
+    } catch (error: any) {
+      return rejectWithValue(parseApiError(error));
+    }
   }
 );
 
@@ -34,9 +84,13 @@ export const register = createAsyncThunk(
     full_name?: string;
     country?: string;
     age?: number;
-  }) => {
-    const response = await apiService.register(userData);
-    return response;
+  }, { rejectWithValue }) => {
+    try {
+      const response = await apiService.register(userData);
+      return response;
+    } catch (error: any) {
+      return rejectWithValue(parseApiError(error));
+    }
   }
 );
 
@@ -71,7 +125,7 @@ const authSlice = createSlice({
       })
       .addCase(login.rejected, (state, action) => {
         state.loading = false;
-        state.error = action.error.message || 'Login failed';
+        state.error = (action.payload as string) || 'Invalid email or password. Please try again.';
       })
       // Register
       .addCase(register.pending, (state) => {
@@ -85,7 +139,7 @@ const authSlice = createSlice({
       })
       .addCase(register.rejected, (state, action) => {
         state.loading = false;
-        state.error = action.error.message || 'Registration failed';
+        state.error = (action.payload as string) || 'Registration failed. Please try again.';
       })
       // Logout
       .addCase(logout.fulfilled, (state) => {
@@ -106,4 +160,3 @@ const authSlice = createSlice({
 
 export const { clearError } = authSlice.actions;
 export default authSlice.reducer;
-

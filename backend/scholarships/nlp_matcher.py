@@ -179,7 +179,7 @@ class ScholarshipMatcher:
             profile = Profile.objects.get(user=user)
         except Profile.DoesNotExist:
             # Return all approved scholarships if profile doesn't exist
-            scholarships = Scholarship.objects.filter(is_approved=True, is_active=True)[:top_k]
+            scholarships = list(Scholarship.objects.filter(is_approved=True, is_active=True)[:top_k])
             return [
                 {
                     'scholarship': scholarship,
@@ -189,13 +189,27 @@ class ScholarshipMatcher:
                 for scholarship in scholarships
             ]
         
-        # Get all approved scholarships
-        scholarships = Scholarship.objects.filter(is_approved=True, is_active=True)
-        if not scholarships.exists():
+        # Get all approved scholarships as a list (avoid queryset re-evaluation)
+        scholarships = list(Scholarship.objects.filter(is_approved=True, is_active=True))
+        if not scholarships:
             return []
+        
+        # Clamp top_k to available scholarships
+        top_k = min(top_k, len(scholarships))
         
         # Create profile text
         profile_text = self._create_profile_text(profile)
+        if not profile_text.strip():
+            # Profile is empty, return all scholarships with default scores
+            return [
+                {
+                    'scholarship': s,
+                    'relevance_score': 0.5,
+                    'method': 'default'
+                }
+                for s in scholarships[:top_k]
+            ]
+        
         profile_text_processed = self._preprocess_text(profile_text)
         
         # Create scholarship texts
@@ -210,15 +224,25 @@ class ScholarshipMatcher:
         
         # Level 2: BERT matching (if available)
         if self.use_bert and self.bert_model and BERT_AVAILABLE:
-            bert_scores = self._match_with_bert(profile_text, [f"{s.title} {s.description} {s.eligibility}" for s in scholarships])
+            try:
+                bert_scores = self._match_with_bert(profile_text, [f"{s.title} {s.description} {s.eligibility}" for s in scholarships])
+            except Exception as e:
+                print(f"BERT matching failed: {e}. Falling back to TF-IDF.")
+                bert_scores = None
             
             # Combine scores (weighted average)
-            if tfidf_scores is not None and ML_AVAILABLE:
+            if bert_scores is not None and tfidf_scores is not None and ML_AVAILABLE:
                 final_scores = 0.3 * tfidf_scores + 0.7 * bert_scores
                 method = 'bert_tfidf_ensemble'
-            else:
+            elif bert_scores is not None:
                 final_scores = bert_scores
                 method = 'bert'
+            elif tfidf_scores is not None and ML_AVAILABLE:
+                final_scores = tfidf_scores
+                method = 'tfidf'
+            else:
+                final_scores = [0.5] * len(scholarships)
+                method = 'default'
         else:
             if ML_AVAILABLE and tfidf_scores is not None:
                 final_scores = tfidf_scores
@@ -229,7 +253,7 @@ class ScholarshipMatcher:
                 method = 'default'
         
         # Get top K scholarships
-        if ML_AVAILABLE:
+        if ML_AVAILABLE and hasattr(final_scores, '__len__'):
             top_indices = np.argsort(final_scores)[-top_k:][::-1]
         else:
             # Simple fallback sorting
@@ -239,6 +263,7 @@ class ScholarshipMatcher:
         
         results = []
         for idx in top_indices:
+            idx = int(idx)  # Convert numpy int64 to Python int
             results.append({
                 'scholarship': scholarships[idx],
                 'relevance_score': float(final_scores[idx]),

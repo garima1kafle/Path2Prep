@@ -1,10 +1,9 @@
 import React, { useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAppDispatch, useAppSelector } from '../store/hooks';
-import { logout } from '../store/slices/authSlice';
 import { fetchProfile } from '../store/slices/profileSlice';
 import { matchScholarships, fetchApplications } from '../store/slices/scholarshipSlice';
-import { fetchNotifications, fetchUnreadCount } from '../store/slices/notificationSlice';
+import { fetchUnreadCount } from '../store/slices/notificationSlice';
 import apiService from '../services/api';
 
 const Dashboard: React.FC = () => {
@@ -22,11 +21,6 @@ const Dashboard: React.FC = () => {
     dispatch(fetchUnreadCount());
   }, [dispatch]);
 
-  const handleLogout = async () => {
-    await dispatch(logout());
-    navigate('/');
-  };
-
   const handleGetRecommendations = async () => {
     try {
       await apiService.getCareerRecommendations();
@@ -38,34 +32,6 @@ const Dashboard: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Header */}
-      <header className="bg-white shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between h-16 items-center">
-            <h1 className="text-2xl font-bold text-blue-600">Path2Prep</h1>
-            <div className="flex items-center space-x-4">
-              <Link to="/notifications" className="relative">
-                <span className="text-gray-600 hover:text-blue-600">Notifications</span>
-                {unreadCount > 0 && (
-                  <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
-                    {unreadCount}
-                  </span>
-                )}
-              </Link>
-              <Link to="/profile" className="text-gray-600 hover:text-blue-600">
-                Profile
-              </Link>
-              <button
-                onClick={handleLogout}
-                className="text-gray-600 hover:text-blue-600"
-              >
-                Logout
-              </button>
-            </div>
-          </div>
-        </div>
-      </header>
-
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Welcome Section */}
         <div className="mb-8">

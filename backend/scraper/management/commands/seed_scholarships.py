@@ -19,14 +19,15 @@ class Command(BaseCommand):
             help='Number of scholarships to create',
         )
         parser.add_argument(
-            '--approve',
+            '--no-approve',
             action='store_true',
-            help='Auto-approve all scholarships',
+            default=False,
+            help='Do NOT auto-approve scholarships (by default they are approved)',
         )
 
     def handle(self, *args, **options):
         count = options['count']
-        auto_approve = options['approve']
+        auto_approve = not options['no_approve']
         
         self.stdout.write(f'Creating {count} scholarships...')
         

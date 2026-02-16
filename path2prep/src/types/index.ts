@@ -14,6 +14,7 @@ export interface User {
 export interface Profile {
   id: number;
   user: number;
+  profile_picture?: string;
   gpa?: number;
   degree_level: string;
   major: string;

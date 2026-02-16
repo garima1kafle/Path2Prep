@@ -5,15 +5,40 @@ import { Link } from 'react-router-dom';
 
 const Scholarships: React.FC = () => {
   const dispatch = useAppDispatch();
-  const { scholarships, matches, loading } = useAppSelector((state) => state.scholarships);
+  const { scholarships, matches, loading, matchLoading, error } = useAppSelector((state) => state.scholarships);
 
   useEffect(() => {
     dispatch(fetchScholarships());
     dispatch(matchScholarships(10));
   }, [dispatch]);
 
-  if (loading) {
+  const isLoading = loading || matchLoading;
+
+  if (isLoading) {
     return <div className="p-8">Loading scholarships...</div>;
+  }
+
+  if (error) {
+    return (
+      <div className="min-h-screen bg-gray-50 py-8">
+        <div className="max-w-6xl mx-auto px-4">
+          <h1 className="text-3xl font-bold mb-6">Scholarships</h1>
+          <div className="bg-red-50 text-red-700 p-4 rounded-lg">
+            <p className="font-semibold">Error loading scholarships</p>
+            <p className="text-sm mt-1">{error}</p>
+            <button
+              className="mt-3 bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700"
+              onClick={() => {
+                dispatch(fetchScholarships());
+                dispatch(matchScholarships(10));
+              }}
+            >
+              Retry
+            </button>
+          </div>
+        </div>
+      </div>
+    );
   }
 
   return (
@@ -48,4 +73,3 @@ const Scholarships: React.FC = () => {
 };
 
 export default Scholarships;
-

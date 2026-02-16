@@ -2,9 +2,38 @@ from django.db import models
 from django.conf import settings
 
 
+class MajorOption(models.Model):
+    """Admin-managed list of majors for dropdown selection"""
+    name = models.CharField(max_length=150, unique=True)
+    is_active = models.BooleanField(default=True)
+
+    class Meta:
+        db_table = 'major_options'
+        ordering = ['name']
+
+    def __str__(self):
+        return self.name
+
+
+class CountryOption(models.Model):
+    """Admin-managed list of countries for dropdown selection"""
+    name = models.CharField(max_length=150, unique=True)
+    is_active = models.BooleanField(default=True)
+
+    class Meta:
+        db_table = 'country_options'
+        ordering = ['name']
+
+    def __str__(self):
+        return self.name
+
+
 class Profile(models.Model):
     """Extended user profile with academic, financial, and skills information"""
     user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='profile')
+    
+    # Profile Picture
+    profile_picture = models.ImageField(upload_to='profile_pictures/', null=True, blank=True)
     
     # Academic Information
     gpa = models.DecimalField(max_digits=4, decimal_places=2, null=True, blank=True)
@@ -42,4 +71,5 @@ class Profile(models.Model):
     
     def __str__(self):
         return f"Profile for {self.user.email}"
+
 

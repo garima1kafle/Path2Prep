@@ -8,6 +8,7 @@ interface ScholarshipState {
   applications: Application[];
   bookmarks: Bookmark[];
   loading: boolean;
+  matchLoading: boolean;
   error: string | null;
 }
 
@@ -17,6 +18,7 @@ const initialState: ScholarshipState = {
   applications: [],
   bookmarks: [],
   loading: false,
+  matchLoading: false,
   error: null,
 };
 
@@ -58,13 +60,27 @@ const scholarshipSlice = createSlice({
     builder
       .addCase(fetchScholarships.pending, (state) => {
         state.loading = true;
+        state.error = null;
       })
       .addCase(fetchScholarships.fulfilled, (state, action: PayloadAction<Scholarship[]>) => {
         state.loading = false;
         state.scholarships = action.payload;
       })
+      .addCase(fetchScholarships.rejected, (state, action) => {
+        state.loading = false;
+        state.error = action.error.message || 'Failed to fetch scholarships';
+      })
+      .addCase(matchScholarships.pending, (state) => {
+        state.matchLoading = true;
+        state.error = null;
+      })
       .addCase(matchScholarships.fulfilled, (state, action: PayloadAction<ScholarshipMatch[]>) => {
+        state.matchLoading = false;
         state.matches = action.payload;
+      })
+      .addCase(matchScholarships.rejected, (state, action) => {
+        state.matchLoading = false;
+        state.error = action.error.message || 'Failed to match scholarships';
       })
       .addCase(fetchApplications.fulfilled, (state, action: PayloadAction<Application[]>) => {
         state.applications = action.payload;

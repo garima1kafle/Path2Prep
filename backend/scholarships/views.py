@@ -4,7 +4,19 @@ from rest_framework.response import Response
 from django_filters.rest_framework import DjangoFilterBackend
 from .models import Scholarship, Application, Bookmark
 from .serializers import ScholarshipSerializer, ApplicationSerializer, BookmarkSerializer
-from .nlp_matcher import ScholarshipMatcher
+import logging
+
+logger = logging.getLogger(__name__)
+
+# Lazy singleton for the matcher to avoid loading BERT on every request
+_matcher_instance = None
+
+def _get_matcher():
+    global _matcher_instance
+    if _matcher_instance is None:
+        from .nlp_matcher import ScholarshipMatcher
+        _matcher_instance = ScholarshipMatcher()
+    return _matcher_instance
 
 
 class ScholarshipViewSet(viewsets.ReadOnlyModelViewSet):
@@ -24,7 +36,7 @@ class ScholarshipViewSet(viewsets.ReadOnlyModelViewSet):
         Returns top 5 scholarship matches based on user profile using NLP
         """
         try:
-            matcher = ScholarshipMatcher()
+            matcher = _get_matcher()
             top_k = request.data.get('top_k', 5)
             matches = matcher.match_scholarships(request.user, top_k=top_k)
             
@@ -39,9 +51,9 @@ class ScholarshipViewSet(viewsets.ReadOnlyModelViewSet):
                 ]
             }, status=status.HTTP_200_OK)
         except Exception as e:
-            import traceback
+            logger.exception("Error in scholarship matching")
             return Response(
-                {'error': str(e), 'traceback': traceback.format_exc()},
+                {'error': str(e)},
                 status=status.HTTP_500_INTERNAL_SERVER_ERROR
             )
 
